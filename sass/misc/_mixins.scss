@@ -1,31 +1,9 @@
 /* HELPERS */
- .flex-row {
-     display: flex; }
-  
-   .flex-column {
-     display: flex;
-     flex-direction: column; }
-  
+.flex-row {
+  display: flex;
+}
 
-//   .containernav{
-//     max-width: 1200px;
-//     margin: 0 auto;
-
-//   }
-//   .container {
-//     max-width: 1800px;
-//     margin: 0 auto; }
-    
-//   .txt_center{
-//     text-align: center;
-//   }
-
-/*
-  @mixin flex($direction, $justify, $align, $gap){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
-  }
-*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

@@ -4,24 +4,13 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-  /* Globals */
+/* Globals */
 html {
-    font-size: 62.5%;
-    font-family: $font-primary;
-    color: $principal; }
-  
-  a {
-    font-size: 1.9rem;
-    text-decoration: none;
-    color: whitesmoke;
-    display: inline-block; }
-  
-  ul {
-    list-style-type: none; }
-  li{
-    display: inline-block;
-    margin: 0 20px;
-  }
-  
+  // font-size: 62.5%;
+  font-family: $font-primary;
+  color: $principal;
+}
+
