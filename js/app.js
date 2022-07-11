@@ -8,7 +8,7 @@ toggle.onclick = function(){
 
 
 // titulo animado
-let text = document.getElementById("hoo");
+let text = document.querySelector('.hoo')
 let str = text.innerHTML;
 
 text.innerHTML = "";
