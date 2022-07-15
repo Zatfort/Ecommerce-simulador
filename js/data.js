@@ -15,10 +15,10 @@ class libro{
 }
 
 
-const volumen1 = new libro("Berserk Volume 1","1 Dic 1990","Paperback","$2.224","./assets/images/Berserkimg.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","001","By Kentaro Miura",) 
-const volumen2 = new libro("Berserk Volume 2","3 Mar 1991","Paperback","$2.479","./assets/images/Berserk2.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","002","By Kentaro Miura",)
-const volumen3 = new libro("Berserk Volume 3","21 Dec 2004","Paperback","$2.290","./assets/images/Berserk3.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","003","By Kentaro Miura",)
-const volumen4 = new libro("Berserk Volume 4","27 Jul 2004","Paperback","$2.292","./assets/images/Berserk4.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","004","By Kentaro Miura",)
+const volumen1 = new libro("Berserk Volume 1","1 Dic 1990","Paperback","$2.224","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070205.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","001","By Kentaro Miura",) 
+const volumen2 = new libro("Berserk Volume 2","3 Mar 1991","Paperback","$2.479","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070212.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","002","By Kentaro Miura",)
+const volumen3 = new libro("Berserk Volume 3","21 Dec 2004","Paperback","$2.290","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070229.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","003","By Kentaro Miura",)
+const volumen4 = new libro("Berserk Volume 4","27 Jul 2004","Paperback","$2.292","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072032.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","004","By Kentaro Miura",)
 const volumen5 = new libro("Berserk Volume 5","26 Oct 2004","Paperback","$2.339","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072513.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","005","By Kentaro Miura",)
 const volumen6 = new libro("Berserk Volume 6","01 Feb 2005","Paperback","$2.379","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072520.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","006","By Kentaro Miura",)
 const volumen7 = new libro("Berserk Volume 7","24 May 2005","Paperback","$2.350","https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593073282.jpg","https://es.wikipedia.org/wiki/Berserk_(manga)","007","By Kentaro Miura",)

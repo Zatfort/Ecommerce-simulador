@@ -1,3 +1,24 @@
+// titulo animado
+const text = document.querySelector('.hoo')
+const str = text.innerHTML
+
+text.innerHTML = ""
+
+const speed = 50
+
+let i = 0
+
+function typeWriter() {
+    if (i < str.length) {
+        text.innerHTML += str.charAt(i)
+        i++
+        setTimeout(typeWriter, speed)
+    }
+}
+
+setTimeout(typeWriter, speed)
+
+
 // barra navegacion
 let navigation = document.querySelector('.navigation')
 
@@ -6,45 +27,16 @@ toggle.onclick = function () {
     navigation.classList.toggle('active')
 }
 
-
-// titulo animado
-// let text = document.querySelector('.hoo')
-// let str = text.innerHTML;
-
-// text.innerHTML = "";
-
-// let speed = 300
-
-// let i = 0
-
-// function typeWriter() {
-//     if (i < str.length) {
-//         text.innerHTML += str.charAt(i)
-//         i++
-//         setTimeout(typeWriter, speed)
-//     }
-// }
-
-// setTimeout(typeWriter, speed);
-
-
-
-
-// Logica Del Proyecto
-
-
 // Declaraciones
 //--------------
 const allLibros = [volumen1, volumen2, volumen3, volumen4, volumen5, volumen6, volumen7, volumen8, volumen9, volumen10, volumen11, volumen12, volumen13, volumen14, volumen15, volumen16]
 
 // Query de elementos
 //-------------------
+
 let carrito = []
 
 const cartasDeProductos = document.querySelector('.sectionProductos')
-
-const cartasDeCarrito = document.querySelector('.cartasDeCarrito')
-
 
 // Funciones
 //----------
@@ -66,8 +58,8 @@ const renderizarProductos = () => {
                                 <h3>${libros.price}<br><span>Precio</span></h3>
                             </div>
                             <div class="actionBtn">
-                                <button  data-id="${libros.id}" class="botonjs"> Añadir al Carrito </button>
-                                <button>Mas info</button>
+                                <button  data-id="${libros.id}" id="botontoaste"  class="botonjs" > Añadir al Carrito </button>
+                                <button >Mas info</button>
                                 </div>
                                 </div>
                     </div>
@@ -78,31 +70,8 @@ const renderizarProductos = () => {
 
 }
 
+
 renderizarProductos()
-
-
-const renderizarProductosEnCarrito = () => {
-    cartasDeCarrito.innerHTML = ''
-    carrito.forEach((libros) => {
-        const aaa = document.createElement('tr')
-        aaa.className = 'cartasedesdejs'
-        aaa.innerHTML = `
-                            <td>
-                                <div class="imagen">
-                                    <img src="${libros.img}" alt="">
-                                </div>
-                            </td>
-                            <td>${libros.name}</td>
-                            <td>${libros.format}</td>
-                            <td>${libros.date}</td>
-                            <td>$${libros.price}</td>
-                            <td>${libros.autor}</td>
-                            <td>${libros.id}</td>
-        `
-        cartasDeCarrito.append(aaa)
-    })
-}
-
 
 // boton agrgar carrito
 
@@ -110,8 +79,7 @@ const agregarLibroaCarrito = (e) => {
     const librosIdSelected = e.target.getAttribute('data-id')
     const libroSelected = allLibros.find((libros) => libros.id == librosIdSelected)
     carrito.push(libroSelected)
-    localStorage.setItem('carrito', JSON.stringify(carrito))
-    renderizarProductosEnCarrito()
+    localStorage.setItem('carritoLista', JSON.stringify(carrito))
 }
 
 const botonjs = document.querySelectorAll('.botonjs')
@@ -120,23 +88,26 @@ botonjs.forEach((botonCompra) => {
     botonCompra.addEventListener('click', agregarLibroaCarrito)
 })
 
-// boton agrgar carrito end
+
+
+// preguntar al tutor
+document.querySelector('#botontoaste').addEventListener('click', () => {
+    Toastify({
+        text: "En Tu Carrito",
+        duration: 3000,
+        destination: "https://www.deviantart.com/anatofinnstark/art/You-do-not-control-me-Berserk-644589434",
+        newWindow: true,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        className: "toa",
+        onClick: function(){} // Callback after click
+      }).showToast();
+
+
+})
 
 
 
 
-
-
-
-
-
-// EventListeners
-//---------------
-
-
-
-
-
-
-// Ejecuciones 
-//------------

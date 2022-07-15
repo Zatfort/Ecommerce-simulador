@@ -1,5 +1,6 @@
 /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 .spacing-xlarge {
   padding: xlarge; }
 
@@ -191,6 +192,25 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.swal2-popup {
+  height: 400px; }
+
+.toa {
+  display: flex;
+  height: 70px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/884d4739-e1b4-4a0d-9915-e886ef4bf263/dcanqxa-8552c4ae-a175-403a-935e-8da88d81e300.png/v1/fill/w_800,h_494,q_80,strp/rebirth_by_thefearmaster_dcanqxa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDk0IiwicGF0aCI6IlwvZlwvODg0ZDQ3MzktZTFiNC00YTBkLTk5MTUtZTg4NmVmNGJmMjYzXC9kY2FucXhhLTg1NTJjNGFlLWExNzUtNDAzYS05MzVlLThkYTg4ZDgxZTMwMC5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.9IZKGdSv_iioqQdCHeJ-L6pSBPkBIV51sC6kz-54W0c);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  align-items: flex-end;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px white;
+  font-family: 'Merriweather', serif; }
+
+.toastify {
+  padding: 1px 20px; }
+
 .m {
   z-index: 1; }
 
@@ -221,11 +241,24 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.18);
     width: 100%;
     height: 100%; }
+    .tuCarrito .menuCarrito .titulosDeCarrito {
+      font-size: large;
+      font-weight: 300;
+      justify-content: space-around;
+      margin-bottom: 20px; }
+    .tuCarrito .menuCarrito .cartasDeCarrito {
+      justify-content: space-around; }
+      .tuCarrito .menuCarrito .cartasDeCarrito .CartasdeProductos {
+        justify-content: space-around;
+        align-items: center; }
+        .tuCarrito .menuCarrito .cartasDeCarrito .CartasdeProductos .imagen {
+          width: 60px; }
   .tuCarrito .comprarBtn {
     width: 100%;
     display: flex;
-    justify-content: end; }
-    .tuCarrito .comprarBtn button {
+    justify-content: end;
+    gap: 2em; }
+    .tuCarrito .comprarBtn .confirmar {
       padding: 10px 30px;
       border-radius: 10px;
       border: none;
@@ -235,28 +268,22 @@ html {
       background: #287bff;
       color: #fff;
       cursor: pointer; }
-      .tuCarrito .comprarBtn button:hover {
+      .tuCarrito .comprarBtn .confirmar:hover {
         transition: 0.5s;
         background-color: #d2b59a; }
-  .tuCarrito table {
-    caption-side: bottom;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse; }
-    .tuCarrito table td {
-      color: #000;
-      font-size: 1.3em;
-      font-weight: 300; }
-    .tuCarrito table .imagen {
-      width: 60px;
-      height: 60px; }
-      .tuCarrito table .imagen img {
-        width: 90%; }
-    .tuCarrito table td {
-      padding: 20px; }
-    .tuCarrito table thead {
-      border-bottom: solid  1px #000;
-      color: #fff; }
+    .tuCarrito .comprarBtn .vaciar {
+      padding: 10px 30px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 1.7em;
+      font-weight: 500;
+      background: red;
+      color: #fff;
+      cursor: pointer; }
+      .tuCarrito .comprarBtn .vaciar:hover {
+        transition: 0.5s;
+        background-color: #f37a09; }
 
 .fondo {
   width: 100%;

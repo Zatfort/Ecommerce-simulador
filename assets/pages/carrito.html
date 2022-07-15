@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="../css/styles.css">
     <title>Tu Carrito</title>
 </head>
@@ -14,7 +18,7 @@
         <div class="navigation m">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="../../index.html">
                         <span class="icon">
                             <img class="icono" src="../../assets/images/SvgjsG5658.svg" alt="">
                         </span>
@@ -31,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../assets/pages/carrito.html">
+                    <a href="../pages/carrito.html">
                         <span class="icon">
                             <ion-icon name="bag-handle-outline"></ion-icon>
                         </span>
@@ -87,35 +91,44 @@
                 <h1>Carrito de Compras</h1>
             </div>
             <section class="menuCarrito screen-M">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Manga</th>
-                            <th>Nombre</th>
-                            <th>Formato</th>
-                            <th>Fecha de lanzamiento</th>
-                            <th>Precio</th>
-                            <th>Autor</th>
-                            <th>id</th>
-                        </tr>
-                    </thead>
-                    <div class="cartasDeCarrito">
-                        
-                    </div>
-                    <caption>
-                        Your shopping cart contains: 3 Products
-                    </caption>
-                </table>
+                <div class="flex-row titulosDeCarrito">
+                    <span>Manga</span>
+                    <span>Nombre</span>
+                    <span>Formato</span>
+                    <span>Fecha de lanzamiento</span>
+                    <span>Precio</span>
+                    <span>Autor</span>
+                    <span>id</span>
+                </div>
+                <div class="flex-column cartasDeCarrito">
+                    <!-- <article class="flex-row CartasdeProductos">
+                        <span ><img class="imagen" src="../images/Berserkimg.jpg" alt=""></span>
+                        <span>Berserk Volume 1</span>  
+                        <span>Paperback</span>  
+                        <span>1 Dic 1990</span>  
+                        <span>$2.224</span>  
+                        <span>Kentaro Miura</span>  
+                        <span>001</span>    
+                    </article> -->
+                </div>
+                <div>
+                    Your shopping cart contains: <span class="contador"></span> Products
+                </div>
             </section>
             <div class="comprarBtn screen-M">
-                <button>Confimar Compra</button>
+                <button class="vaciar">Vaciar Carrito</button>
+                <button class="confirmar">Confimar Compra</button>
             </div>
         </div>
     </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../../js/data.js"></script>
+    <script src="../../js/carrito.js"></script>
     <script src="../../js/app.js"></script>
+    
 
 </body>
 
