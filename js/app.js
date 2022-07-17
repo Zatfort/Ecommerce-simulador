@@ -83,19 +83,25 @@ const renderizarProductos = () => {
 }
 
 
-fetch('../data/data.json')
+// funcion Async
+const cargarListaProductos = async () => {
+    const res = await fetch('../data/data.json')
+    const { data } = await res.json()
+    allLibros = data
+    renderizarProductos(allLibros)
+}
+
+    
+/*
+    fetch('../data/data.json')
     .then((res) => res.json())
     .then((jsonResponse) => {
         allLibros = jsonResponse.data
-
         renderizarProductos(allLibros)
     })
-    
-
-    
 
 
-
+*/
 
 
 
@@ -144,7 +150,7 @@ botonjs.forEach(btn => btn.addEventListener('click',() => {
 
 
 
-
+cargarListaProductos()
 
 
 

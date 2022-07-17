@@ -49,12 +49,7 @@ const renderizarProductosEnCarrito = () => {
 
 almacenados = JSON.parse(localStorage.getItem('carritoLista')) || []
 
-fetch('../data/data.json')
-    .then((res) => res.json())
-    .then((jsonResponse) => {
-        allLibros = jsonResponse.data
-        renderizarProductosEnCarrito(allLibros)
-    })
+
 
 
 
@@ -128,3 +123,4 @@ contadorFuncion()
 // -----------------------------------
 
 
+renderizarProductosEnCarrito()
