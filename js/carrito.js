@@ -15,9 +15,10 @@ toggle.onclick = function () {
 
 const cartasDeCarrito = document.querySelector('.cartasDeCarrito')
 
+let almacenados
 
 const renderizarProductosEnCarrito = () => {
-    const almacenados = JSON.parse(localStorage.getItem('carritoLista'))
+    almacenados = JSON.parse(localStorage.getItem('carritoLista'))
     cartasDeCarrito.innerHTML = ''
     almacenados.forEach((libros) => {
         
@@ -43,12 +44,20 @@ const renderizarProductosEnCarrito = () => {
 // -----------------------------------
 
 
-// IF para saber si hay algo en el carrito al inicar ( no funciona)
+//  para saber si hay algo en el carrito al inicar 
 
-if (localStorage.getItem('carritoLista')) {
-    carrito = JSON.parse(localStorage.getItem('carritoLista'))
-    renderizarProductosEnCarrito()
-}
+
+almacenados = JSON.parse(localStorage.getItem('carritoLista')) || []
+
+fetch('../data/data.json')
+    .then((res) => res.json())
+    .then((jsonResponse) => {
+        allLibros = jsonResponse.data
+        renderizarProductosEnCarrito(allLibros)
+    })
+
+
+
 
 // -----------------------------------
 

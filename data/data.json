@@ -1,45 +1,164 @@
-
 {
-    "data" : [
-       {
-           "name":"Berserk Volume 1",
-           "date":"1 Dic 1990",
-           "format":"Paperback",
-           "price":"2.224",
-           "img":"./assets/images/Berserkimg.jpg",
-           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
-           "id":"001",
-           "autor":"By Kentaro Miura"
-       },
-       {
-           "name":"Berserk Volume 2",
-           "date":"3 Mar 1991",
-           "format":"Paperback",
-           "price":"2.479",
-           "img":"./assets/images/Berserk2.jpg",
-           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
-           "id":"002",
-           "autor":"By Kentaro Miura"
-       },
-       {
-           "name":"Berserk Volume 3",
-           "date":"31 Oct 1991",
-           "format":"Paperback",
-           "price":"2.290",
-           "img":"./assets/images/Berserk3.jpg",
-           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
-           "id":"003",
-           "autor":"By Kentaro Miura"
-       },
-       {
-           "name":"Berserk Volume 4",
-           "date":"29 Feb 1992",
-           "format":"Paperback",
-           "price":"2.252",
-           "img":"./assets/images/Berserk4.jpg",
-           "url":"https://es.wikipedia.org/wiki/Berserk_(manga)",
-           "id":"004",
-           "autor":"By Kentaro Miura"
-       }
-   ]
+    "data": [
+        {
+            "name": "Berserk Volume 1",
+            "date": "1 Dic 1990",
+            "format": "Paperback",
+            "price": "2.224",
+            "img": "./assets/images/Berserkimg.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "001",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 2",
+            "date": "3 Mar 1991",
+            "format": "Paperback",
+            "price": "2.479",
+            "img": "./assets/images/Berserk2.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "002",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 3",
+            "date": "31 Oct 1991",
+            "format": "Paperback",
+            "price": "2.290",
+            "img": "./assets/images/Berserk3.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "003",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 4",
+            "date": "29 Feb 1992",
+            "format": "Paperback",
+            "price": "2.252",
+            "img": "./assets/images/Berserk4.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "004",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 5",
+            "date": "26 Oct 2004",
+            "format": "Paperback",
+            "price": "2.339",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072513.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "005",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 6",
+            "date": "01 Feb 2005",
+            "format": "Paperback",
+            "price": "2.379",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072520.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "006",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 7",
+            "date": "24 May 2005",
+            "format": "Paperback",
+            "price": "2.350",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593073282.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "007",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 8",
+            "date": "27 Jul 2005",
+            "format": "Paperback",
+            "price": "2.301",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593073299.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "008",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 9",
+            "date": "25 Oct 2005",
+            "format": "Paperback",
+            "price": "2.398",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593073305.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "009",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 10",
+            "date": "31 Ene 2006",
+            "format": "Paperback",
+            "price": "2.388",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593073312.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "010",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 11",
+            "date": "25 Abr 2006",
+            "format": "Paperback",
+            "price": "2.379",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5930/9781593074708.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "011",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 12",
+            "date": "25 Jul 2006",
+            "format": "Paperback",
+            "price": "2.320",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593074845.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "012",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 13",
+            "date": "10 Oct 2006",
+            "format": "Paperback",
+            "price": "2.330",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593075002.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "013",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 14",
+            "date": "19 Dec 2006",
+            "format": "Paperback",
+            "price": "2.369",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593075019.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "014",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 15",
+            "date": "20 Feb 2007",
+            "format": "Paperback",
+            "price": "2.350",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593075774.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "015",
+            "autor": "By Kentaro Miura"
+        },
+        {
+            "name": "Berserk Volume 16",
+            "date": "10 Abr 2007",
+            "format": "Paperback",
+            "price": "2.292",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593077068.jpg",
+            "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
+            "id": "016",
+            "autor": "By Kentaro Miura"
+        }
+    ]
 }
