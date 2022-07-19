@@ -31,7 +31,7 @@ toggle.onclick = function () {
 
 // Declaraciones
 //--------------
-let allLibros 
+let allLibros
 
 
 // Query de elementos
@@ -74,39 +74,54 @@ const renderizarProductos = () => {
                     </div>
                     `
         cartasDeProductos.append(librosArticle)
-        
-        
+
+
 
     })
-    
+
+
+    const botonjs = document.querySelectorAll('.botonjs')
+
+    botonjs.forEach((botonCompra) => {
+        botonCompra.addEventListener('click', agregarLibroaCarrito)
+
+    })
+
+    // toastify
+
+    botonjs.forEach(btn => btn.addEventListener('click', () => {
+        Toastify({
+            text: "En Tu Carrito",
+            duration: 3000,
+            destination: "https://www.deviantart.com/anatofinnstark/art/You-do-not-control-me-Berserk-644589434",
+            newWindow: true,
+            close: false,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            className: "toa",
+            onClick: function () {} // Callback after click
+        }).showToast();
+
+
+    }))
+
+
 
 }
 
 
 // funcion Async
 const cargarListaProductos = async () => {
-    const res = await fetch('../data/data.json')
-    const { data } = await res.json()
+    const res = await fetch('./data/data.json')
+    const {
+        data
+    } = await res.json()
     allLibros = data
     renderizarProductos(allLibros)
 }
 
-    
-/*
-    fetch('../data/data.json')
-    .then((res) => res.json())
-    .then((jsonResponse) => {
-        allLibros = jsonResponse.data
-        renderizarProductos(allLibros)
-    })
 
-
-*/
-
-
-
-
-// renderizarProductos()
 
 // boton agrgar carrito
 
@@ -115,78 +130,16 @@ const agregarLibroaCarrito = (e) => {
     const libroSelected = allLibros.find((libros) => libros.id == librosIdSelected)
     carrito.push(libroSelected)
     localStorage.setItem('carritoLista', JSON.stringify(carrito))
-    
-    
+
+
 }
 
-const botonjs = document.querySelectorAll('.botonjs')
-
-botonjs.forEach((botonCompra) => {
-    botonCompra.addEventListener('click', agregarLibroaCarrito)
-    
-})
 
 
 
-// toastify
 
-botonjs.forEach(btn => btn.addEventListener('click',() => {
-    Toastify({
-        text: "En Tu Carrito",
-        duration: 3000,
-        destination: "https://www.deviantart.com/anatofinnstark/art/You-do-not-control-me-Berserk-644589434",
-        newWindow: true,
-        close: false,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        className: "toa",
-        onClick: function () { } // Callback after click
-    }).showToast();
-
-
-}))
 
 
 
 
 cargarListaProductos()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// preguntar al tutor
-
-/*
-document.querySelector('.botonjs').addEventListener('click', () => {
-    Toastify({
-        text: "En Tu Carrito",
-        duration: 3000,
-        destination: "https://www.deviantart.com/anatofinnstark/art/You-do-not-control-me-Berserk-644589434",
-        newWindow: true,
-        close: false,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        className: "toa",
-        onClick: function(){} // Callback after click
-      }).showToast();
-
-
-})
-esto no funciona 
-*/
-
-
-
-

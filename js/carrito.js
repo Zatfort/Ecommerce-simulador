@@ -21,7 +21,6 @@ const renderizarProductosEnCarrito = () => {
     almacenados = JSON.parse(localStorage.getItem('carritoLista'))
     cartasDeCarrito.innerHTML = ''
     almacenados.forEach((libros) => {
-        
         const cadalibro = document.createElement('article')
         cadalibro.className = 'flex-row CartasdeProductos'
         cadalibro.innerHTML = 
@@ -48,10 +47,6 @@ const renderizarProductosEnCarrito = () => {
 
 
 almacenados = JSON.parse(localStorage.getItem('carritoLista')) || []
-
-
-
-
 
 
 // -----------------------------------
@@ -96,6 +91,7 @@ document.querySelector('.confirmar').addEventListener('click',() => {
       })
 })
 // -----------------------------------
+
 
 
 

@@ -5,7 +5,7 @@
             "date": "1 Dic 1990",
             "format": "Paperback",
             "price": "2.224",
-            "img": "./assets/images/Berserkimg.jpg",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070205.jpg",
             "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
             "id": "001",
             "autor": "By Kentaro Miura"
@@ -15,7 +15,7 @@
             "date": "3 Mar 1991",
             "format": "Paperback",
             "price": "2.479",
-            "img": "./assets/images/Berserk2.jpg",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070212.jpg",
             "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
             "id": "002",
             "autor": "By Kentaro Miura"
@@ -25,7 +25,7 @@
             "date": "31 Oct 1991",
             "format": "Paperback",
             "price": "2.290",
-            "img": "./assets/images/Berserk3.jpg",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593070229.jpg",
             "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
             "id": "003",
             "autor": "By Kentaro Miura"
@@ -35,7 +35,7 @@
             "date": "29 Feb 1992",
             "format": "Paperback",
             "price": "2.252",
-            "img": "./assets/images/Berserk4.jpg",
+            "img": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5930/9781593072032.jpg",
             "url": "https://es.wikipedia.org/wiki/Berserk_(manga)",
             "id": "004",
             "autor": "By Kentaro Miura"
